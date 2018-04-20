@@ -1,35 +1,17 @@
-@media screen and (max-width:480px) {
+@media only screen and (max-width: 480px) {
     html {
         font-size: 8px;
     }
-    .header_top {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo {
-      text-align: center;
-    }
-    .btn {
+ 
+    .header_banner {
+      padding: 0;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      width: 100%;
       
-      
-      &__reg {
-        padding: 15px 60px;
-        margin-top: 3rem;
-      }
-      &__cnt {
-        padding: 1rem 4rem;
-      }
     }
     .content_block {
       flex-direction: column;
+    }
+    }
 
-    }
-    .content_img {
-      width: 50%;
-    }
-    .content_row {
-      padding-right: 0;
-      margin-bottom: 5rem;
-    }
-}

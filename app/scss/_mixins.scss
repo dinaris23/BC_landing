@@ -1,0 +1,9 @@
+//====adaptive font====//
+
+@mixin fontSize ($pixels) {
+    font-size: $pixels * 1px;
+    font-size: $pixels * 0.1rem ;
+}
+
+
+

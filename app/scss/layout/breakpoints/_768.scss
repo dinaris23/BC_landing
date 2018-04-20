@@ -1,0 +1,32 @@
+@media screen and (max-width:768px) {
+  .intro {
+  		&_row {
+  			
+  		}
+  		&_col {
+  			&:last-child {
+  		    flex-basis: 100%;
+          padding: 50px 20px;
+  		
+  			}
+  		}
+  		&_content {
+  			padding: 0;
+  		}
+  		&_logo {
+  			width: 50%;
+  			height: auto;
+  		}
+      &_img {
+          width: 45px;
+          height: auto;
+          top: 2em;
+          left: -1em;
+          &__db {
+            width: 105px;
+            height: auto;
+            left: -2.5em;
+      }
+   }
+	}
+}

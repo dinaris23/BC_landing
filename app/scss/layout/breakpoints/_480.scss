@@ -1,16 +1,35 @@
 @media screen and (max-width:480px) {
     html {
-        font-size: 5px;
+        font-size: 8px;
     }
-    .intro_img {
-          width: 33px;
-          height: auto;
-          top: 2em;
-          left: -1em;
-          &__db {
-            width: 77px;
-            height: auto;
-            left: -2.5em;
+    .header_top {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      text-align: center;
+    }
+    .btn {
+      
+      
+      &__reg {
+        padding: 15px 60px;
+        margin-top: 3rem;
       }
-   }
+      &__cnt {
+        padding: 1rem 4rem;
+      }
+    }
+    .content_block {
+      flex-direction: column;
+
+    }
+    .content_img {
+      width: 50%;
+    }
+    .content_row {
+      padding-right: 0;
+      margin-bottom: 5rem;
+    }
 }

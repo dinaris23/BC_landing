@@ -44,5 +44,6 @@ body {
 		margin-top: -8rem;
 		box-shadow: 2px 2px 20px $white-color;
 		@include fontSize(24);
+		padding: 1em 4em;
 	}
 }

@@ -47,4 +47,15 @@
     }
 
 }
-
+@media only (max-width: 768px) and (orientation: landscape) {
+    .header_container {
+    background: url(../img/chips_banner_225.png) no-repeat 50% 70%;
+    background-size: 50%;
+  }
+  .btn__cnt {
+      @include fontSize(14);
+    } 
+  .main_title {
+    @include fontSize(20);
+  }  
+}

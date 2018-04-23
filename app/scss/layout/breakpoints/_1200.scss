@@ -2,13 +2,19 @@
     html {
         font-size: 7px;
     }
-
-   .intro_img {
-   		width: 50px;
-   		height: auto;
-   		&__db {
-   			width: 115px;
-   			height: auto;
-   		}
+    .main_container {
+      width: 70vw;
+    }
+    .main_item img {
+      width: 70%;
+    }
+    .btn {
+      padding: 1.5vw 5vw;
+    }
+ 
    }
+@media screen and (orientation: landscape) {
+   .main_item img {
+      width: 50%;
+    }
 }

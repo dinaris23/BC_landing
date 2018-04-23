@@ -1,71 +1,122 @@
-.container {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0 20px;
-	position: relative;
-	
+html {
+	font-size: 10px;
 }
-.header {
-	width: 100%;
-	background: url('../img/header_bg_01.jpg') no-repeat center;
-	background-size: cover;
-	&_top {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		padding-top: 3rem;
-	}
-	&_banner {
-		position: relative;
-		padding: 0 5rem;
-		padding-bottom: 10rem;
-	}
-	&_img {
-		object-fit: cover;
-		width: 100%;
-		height: auto;
-		position: relative;
-        z-index: 2;
-	}
-} 
-.logo {
-	text-decoration: none;
-}
-.content {
-	width: 100%;
-	background: url('../img/main_bg_02.jpg') no-repeat center;
-	background-size: cover;
-	padding: 6rem 0;
-	&_block {
-		display: flex;
-		justify-content: space-between;
-		padding-top: 6rem;
 
+body {
+	font-family: $common-font;
+	background: #031825; 
+
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	background: $red-gradient;
+	color: $white-color;
+	padding: 1vw 5vw;
+	@include fontSize(15);
+	font-weight: 100; 
+	transition: all ease-out .3s;
+	text-shadow: 1px 1px 2px black;
+	cursor: pointer;
+	&:hover {
+		background: $hover-gradient;
+		
 	}
-	&_img {
-		width: 100%;
-		height: auto;
-	}
-	&_row {
-		text-align: center;
-		padding-right: 4rem;
-		&:last-child {
-			padding-right: 0;
+	&__reg {
+		border-radius: 5px;
+		position: relative;
+		&::before {
+			content: '';
+			background: url('../img/Icon_man.png') no-repeat;
+			position: absolute;
+			display: block;
+			left: 5%;
+    		top: 14%; 
+    		width: 25px;
+    		height: 29px;
 		}
 	}
-	&_text {
+	&__cnt{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -6%;
+		box-shadow: 2px 2px 20px $white-color;
+		@include fontSize(24);
+		
+	}
+}
+.header {
+	height: 60vh;
+	background: url('../img/header_bg_01.jpg') no-repeat center;
+	background-size: cover;
+	position: relative;
+		&_container {
+			width: 50vw;
+			max-width: 960px;
+			margin: 0 auto;
+			height: 50vh;
+			background: url('../img/chips_banner_225.png') no-repeat center;
+			background-size: contain;
+		}
+		&_top {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding: 2vh 0;
+
+		}
+		&_logo {
+			width: 20vh;
+			height: auto;
+			object-fit: cover;
+		}
+}
+.main {
+	height: 40vh;
+	background: url('../img/main_bg_02.jpg') no-repeat center;
+	background-size: cover;
+	position: relative;
+	&_chips {
+		display: flex;
+		justify-content: space-between;
+	}
+	&_container {
+		width: 50vw;
+		max-width: 960px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+
+	}
+	&_item {
+		margin: 0;
+		flex-basis: 33.33333%;
+		margin-right: 3vw;
+		text-align: center;
+		&:last-child {
+			margin-right: 0;
+		}
+		& img {
+			width: 100%;
+    		height: auto;
+		}
+	}
+	&_title {
 		@include fontSize(40);
 		color: $white-color;
 		font-weight: 100;
-		margin-bottom: 0;
-		margin-top: 2rem;
-		&__sm {
-			@include fontSize(24);
-			margin-top: 1rem;
-		}
+		margin: 0;
 	}
+
 }
-.cost {
+.red-price {
 	color: $red-color;
+	font-family: $common-font;
 	font-weight: 500;
+	
+
 }
+

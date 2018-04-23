@@ -24,11 +24,11 @@
       
       
       &__reg {
-        padding: 15px 60px;
-        margin-top: 3rem;
+        padding: 1vw 5vw;
+        margin-top: 2vh;
       }
       &__cnt {
-        padding: 1rem 4rem;
+        padding: 1vw 5vw;
       }
     }
     
@@ -38,6 +38,12 @@
     .content_row {
       padding-right: 0;
       margin-bottom: 5rem;
+    }
+    .main_container {
+      width: 50vw;
+    }
+    .btn__reg::before {
+      display: none;
     }
 
 }
